@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Mit navn er Sofie Amalie, og jeg er i gang med uddannelsen som multimediedesigner. Her kan man se min portfolio med de forskellige projekter og grafiske opgaver, vi laver i løbet af uddannelsen.">
+	<title>Sofie Amalie Hansen: Multimediedesigner Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Chewy|Roboto+Condensed|Dawning+of+a+New+Day|" rel="stylesheet">
+</head>
+
+<body>
+
+	<header>
+		<img class="logo" src="images/logo.png" alt="logo">
+		<h2 id="forside">Sofie Amalie Hansen<br>Multimediedesigner</h2>
+		<nav class="topnav" id="myTopnav">
+			<a href="index.html" class="active">Forside</a>
+			<a href="#portfolio">Portfolio</a>
+			<a href="#om-mig">Om mig</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+		</nav>
+
+	</header>
+
+
+	<section id="portfolio">
+		<h1>PORTFOLIO</h1>
+
+
+		<!-- MAIN (Center website) -->
+		<div class="main">
+			<input type="radio" onclick="filterSelection('all')" name="category" checked> Alle
+			<input type="radio" onclick="filterSelection('nature')" name="category"> Cases
+			<input type="radio" onclick="filterSelection('cars')" name="category"> Andre opgaver
+			<br>
+			<!-- Portfolio Gallery Grid -->
+
+			<div class="row">
+				<div class="column nature">
+					<div class="content">
+						<a href="case1.html">
+      <img src="images/case1mock-kopikopi.jpg" alt="App" class="woop">
+		<section class="billedtekst">
+		<h4>Case 1.1</h4>
+		</section>
+		</a></div>
+				</div>
+
+				<div class="column nature">
+					<div class="content">
+						<a href="case2.html">
+    <img src="images/case2mock.jpg" alt="Magazine" class="woop2">
+		<section class="billedtekst">
+      <h4>Case 1.2</h4>
+		</section>
+		</a>
+					</div>
+				</div>
+
+				<div class="column nature">
+					<div class="content">
+						<a href="case3.html">
+    <img class="woop2" src="images/case3mock.jpg" alt="Vinylrock hjemmeside">
+	<section class="billedtekst">
+      <h4>Case 1.3</h4>
+	</section>
+		</a></div>
+				</div>
+
+				<div class="column cars">
+					<div class="content">
+						<a href="case4.html">
+      <img class="woop3" src="images/filmplakat.png" alt="Filmplakat">
+      <section class="billedtekst">
+		<h4>Filmplakat</h4>
+    </section>
+		</a> </div>
+				</div>
+
+				<div class="column cars">
+					<div class="content">
+						<a href="case5.html">
+    <img class="woop4" src="images/infographic2.jpg" alt="Infographics">
+		<section class="billedtekst">
+      <h4>Infographics</h4>
+			</section>
+		</a></div>
+				</div>
+
+				<!-- END GRID -->
+			</div>
+
+		</div>
+	</section>
+	<!-- END MAIN -->
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<section class="farve">
+
+		<section id="om-mig">
+			<h1>HVEM ER JEG?</h1>
+		</section>
+
+
+		<div id="om-mig2">
+			<img class="mig" src="images/portrat2.png" alt="Portræt">
+			<p class="om-mig3">
+				Jeg hedder Sofie Amalie og er 22 år. Til daglig studerer jeg på Multimediedesigner-uddannelsen, hvor jeg skal til og i gang med 2.semester på Erhvervsakademi Aarhus. Med en far som it-mand, har jeg altid været fascineret af it og den digitale verden. Jeg elsker at være kreativ, især foran computeren, hvor jeg kan sidde i flere timer og fordybe mig i det grafiske. Derudover er jeg også glad for at fotografere, om det så fx. er til en familiefest, portrætbilleder eller af naturen. <br>HTML & CSS kendte jeg ikke meget til i forvejen, men det er helt sikkert vokset på mig. Selvom det dog til tider kan ødelægge ens gode humør, er det en endnu federe følelse, når det man gerne vil have, endelig lykkedes!
+				<br>
+				<br>Multimediedesigner-uddannelsen er den ideelle uddannelse for mig, da den har mange muligheder, er bred og indeholder mange af de ovenstående ting, som jeg synes er interessante, og som jeg godt kan lide at lave.<br><br> I min portfolio har jeg samlet nogle af de projekter, som vi har lavet i løbet af 1.semester og bl.a. viser, hvad vi lærer her på uddannelsen.
+			</p>
+		</div>
+
+	</section>
+
+
+	<footer>
+		<p id="overskrift">Kontakt</p>
+		<p>Tlf. 30 28 94 07<br> E-mail: sofie-amalie95@hotmail.com</p>
+	</footer>
+
+
+	<!--NAVIGATION-->
+
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+
+	</script>
+
+	<!--PORTFOLIO-->
+
+	<script>
+		filterSelection("all")
+
+		function filterSelection(c) {
+			var x, i;
+			x = document.getElementsByClassName("column");
+			if (c == "all") c = "";
+			for (i = 0; i < x.length; i++) {
+				w3RemoveClass(x[i], "show");
+				if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+			}
+		}
+
+		function w3AddClass(element, name) {
+			var i, arr1, arr2;
+			arr1 = element.className.split(" ");
+			arr2 = name.split(" ");
+			for (i = 0; i < arr2.length; i++) {
+				if (arr1.indexOf(arr2[i]) == -1) {
+					element.className += " " + arr2[i];
+				}
+			}
+		}
+
+		function w3RemoveClass(element, name) {
+			var i, arr1, arr2;
+			arr1 = element.className.split(" ");
+			arr2 = name.split(" ");
+			for (i = 0; i < arr2.length; i++) {
+				while (arr1.indexOf(arr2[i]) > -1) {
+					arr1.splice(arr1.indexOf(arr2[i]), 1);
+				}
+			}
+			element.className = arr1.join(" ");
+		}
+
+	</script>
+
+
+</body>
+
+</html>

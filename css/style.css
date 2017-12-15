@@ -1,0 +1,682 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0%;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #1e2036;
+}
+
+
+header {
+	text-align: center;
+	font-size: 10px;
+	color: #ff917c;
+	height: 100%;
+
+}
+
+.logo {
+	margin-top: 10%;
+}
+
+
+#forside {
+	padding-bottom: 10%;
+	font-family: 'Dawning of a New Day', cursive;
+	color: #ff917c;
+	line-height: 40px;
+}
+
+h1 {
+	font-family: 'Chewy', sans-serif;
+	text-align: center;
+	color: #1e2036;
+	margin-top: 10%;
+	margin-bottom: 0;
+	font-size: 50px;
+}
+
+.caseoverskrift {
+	text-align: center;
+	margin-top: 0;
+	font-size: 25px;
+	margin-bottom: 10%;
+
+}
+
+
+
+.topnav {
+	background-color: #1e2036;
+	overflow: hidden;
+	display: block;
+	margin: auto;
+
+}
+
+
+
+.topnav a {
+	display: inline-block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	margin-left: 40px;
+	text-decoration: none;
+	font-size: 17px;
+	list-style-type: none;
+
+}
+
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+
+
+.active {
+	background-color: #1e2036;
+	color: white;
+}
+
+.topnav .icon {
+	display: none;
+}
+
+
+
+footer {
+	background-color: #1e2036;
+	color: #ff917c;
+	line-height: 25px;
+	height: 150px;
+	margin-top: 225px;
+	clear: both;
+}
+
+footer p {
+	padding-left: 25px;
+	margin: 0px;
+	clear: both;
+}
+
+
+
+#overskrift {
+	font-family: 'Chewy', sans-serif;
+	padding-top: 30px;
+}
+
+/*casesider*/
+
+#infooverskrift {
+	font-family: 'Chewy', sans-serif;
+	font-size: 20px;
+	display: inline-block;
+	position: absolute;
+	color: white;
+	padding-top: 0;
+	margin-left: 10px;
+}
+
+/*PORTFOLIO*/
+
+.woop {
+	width: 50%;
+}
+
+.woop2 {
+	width: 100%;
+}
+
+.woop3 {
+	width: 50%;
+}
+
+.woop4 {
+	width: 72%;
+}
+
+.column:hover {
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+.main {
+	max-width: 1000px;
+	margin: auto;
+	text-align: center;
+}
+
+h1 {
+	font-size: 50px;
+	word-break: break-all;
+}
+
+.row {
+	margin: 10px -16px;
+}
+
+
+.row,
+.row > .column {
+	padding: 20px;
+}
+
+
+.column {
+	float: left;
+	width: 33.33%;
+	display: none;
+
+}
+
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.content {
+	background-color: white;
+	padding: 0px;
+	border: black solid thin;
+}
+
+
+.show {
+	display: block;
+}
+
+h4 {
+	background-color: #DDDDDD;
+	display: inline-block;
+	color: white;
+	margin-left: 10px;
+}
+
+.billedtekst {
+	background-color: #DDDDDD;
+}
+
+.column cars {
+	width: 50%;
+	margin-top: -10%;
+	display: inline-block;
+}
+
+
+/*tablet*/
+
+@media screen and (min-width: 720px) {
+
+	header {
+
+		background-image: url(test5ny.jpg);
+		background-size: 100%;
+	}
+
+	.topnav {
+		border-top: thin solid #dddd;
+	}
+
+	.logo {
+		margin-top: 10%;
+		width: 20%;
+	}
+
+	#forside {
+		font-size: 250%;
+		margin-bottom: 0;
+		margin-top: 2%;
+	}
+
+	#om-mig {
+		background-color: #1e2036;
+		padding: 10px;
+		height: 250px;
+
+	}
+
+	#om-mig h1 {
+		color: #ff917c;
+		padding-top: 0px;
+		margin-top: 50px;
+
+
+	}
+
+	.mig {
+		width: 20%;
+		margin: auto;
+		display: block;
+		position: static;
+		left: 35%;
+		bottom: auto;
+		margin-top: -10%;
+		z-index: 2;
+
+	}
+
+
+	#om-mig2 {
+		height: 650px;
+
+
+	}
+
+	.farve {
+		background-color: #dddd;
+	}
+
+
+	.om-mig3 {
+		margin: 5%;
+		text-align: justify;
+		line-height: 25px;
+	}
+
+	/*casesider*/
+	.infoboks {
+		display: block;
+		float: left;
+		position: absolute;
+		margin-left: 5%;
+		width: 45%;
+		background-color: #dddd;
+	}
+
+
+	.infoting {
+		margin-top: 15px;
+		margin-left: 5%;
+		width: 30px;
+		display: inline-block;
+	}
+
+
+	.infotekst {
+		margin-left: 5%;
+		line-height: 25px;
+		margin-top: 5px;
+	}
+
+
+	.broedtekst {
+		margin-top: 250px;
+		margin-left: 5%;
+		display: inline-flex;
+		flex-direction: column;
+		float: left;
+		padding-left: 5%;
+		padding-right: 5%;
+		width: 45%;
+		margin-bottom: 5%;
+		background-color: #E6EFDC;
+		text-align: justify;
+		line-height: 25px;
+
+	}
+
+
+	.flex-container {
+
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		float: right;
+
+	}
+
+
+	.flex-item {
+		width: 50%;
+		float: right;
+		margin-bottom: 5%;
+		margin-left: 25%;
+	}
+
+
+	.imgaside {
+		display: block;
+		align-items: center;
+		width: 100%;
+		float: right;
+		padding-bottom: 20%;
+	}
+
+}
+
+
+/*desktop*/
+
+@media screen and (min-width: 1064px) {
+
+	header {
+		background-image: url(test10ny.png);
+
+	}
+
+	.logo {
+		margin-top: 4%;
+		width: 13%;
+	}
+
+
+	.topnav {
+		border-top: hidden;
+		margin-top: 7.5%;
+	}
+
+	#forside {
+		font-size: 35px;
+		margin-top: 3%;
+		margin-bottom: 8%;
+		padding-bottom: 0;
+	}
+
+	#om-mig {
+		background-color: #1e2036;
+		padding: 10px;
+		height: 250px;
+
+	}
+
+	#om-mig h1 {
+		color: #ff917c;
+		padding-top: -20px;
+
+
+	}
+
+
+
+	.mig {
+		width: 15%;
+		margin: auto;
+		display: block;
+		position: static;
+		left: 35%;
+		bottom: auto;
+		margin-top: -8%;
+		z-index: 2;
+
+	}
+
+
+	#om-mig2 {
+		height: 600px;
+
+	}
+
+	.farve {
+		background-color: #dddd;
+	}
+
+
+	.om-mig3 {
+		margin: 50px;
+		text-align: justify;
+		line-height: 25px;
+		padding-left: 5%;
+		padding-bottom: 5%;
+		padding-right: 5%;
+	}
+
+
+	/*casesider*/
+	.infoboks {
+		display: block;
+		float: left;
+		position: absolute;
+		margin-left: 5%;
+		width: 45%;
+		background-color: #dddd;
+	}
+
+
+	.infoting {
+		margin-top: 15px;
+		margin-left: 5%;
+		width: 30px;
+		display: inline-block;
+	}
+
+
+	.infotekst {
+		margin-left: 5%;
+		line-height: 25px;
+		margin-top: 5px;
+		text-align: justify;
+	}
+
+
+	.broedtekst {
+		margin-top: 250px;
+		margin-left: 5%;
+		display: inline-flex;
+		flex-direction: column;
+		float: left;
+		padding-left: 5%;
+		padding-right: 5%;
+		width: 45%;
+		margin-bottom: 5%;
+		background-color: #E6EFDC;
+		text-align: justify;
+		line-height: 25px;
+
+	}
+
+
+
+	.om-projekt {
+		padding: 25px;
+		text-align: justify;
+		line-height: 25px;
+		width: 100%;
+
+	}
+
+	.flex-container {
+
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		float: right;
+
+	}
+
+
+	.flex-item {
+		width: 50%;
+		float: right;
+		margin-bottom: 5%;
+		margin-left: 25%;
+	}
+
+
+	.imgaside {
+		display: block;
+		align-items: center;
+		width: 100%;
+		float: right;
+	}
+
+}
+
+
+/*Mobil*/
+
+@media screen and (max-width: 600px) {
+	.topnav a {
+		display: none;
+
+	}
+	
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.topnav.responsive {
+		position: relative;
+	}
+	.topnav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+
+}
+
+
+@media screen and (max-width: 719px) {
+
+
+	header {
+		background-image: url(test5ny.jpg);
+		background-size: 100%;
+
+
+	}
+
+
+	.logo {
+		width: 20%;
+		margin-top: 8%;
+	}
+
+	#forside {
+		font-size: 230%;
+	}
+
+	.topnav {
+		border-top: thin solid #dddd;
+	}
+
+
+	#forside {
+		margin-top: 10px;
+	}
+
+	.column {
+		width: 60%;
+		float: left;
+		margin-right: 20%;
+		margin-left: 20%;
+
+
+	}
+
+	#om-mig {
+		background-color: #1e2036;
+		padding: 10px;
+		height: 250px;
+
+	}
+
+	#om-mig h1 {
+		color: #ff917c;
+		padding-top: -10px;
+		margin-top: 50px;
+
+
+	}
+
+	.mig {
+		width: 30%;
+		margin: auto;
+		display: block;
+		position: static;
+		left: 35%;
+		bottom: auto;
+		margin-top: -15%;
+		z-index: 2;
+
+	}
+
+
+	#om-mig2 {
+		height: 900px;
+		
+
+	}
+
+	.farve {
+		background-color: #dddd;
+	}
+
+
+	.om-mig3 {
+		margin: 50px;
+		text-align: justify;
+		line-height: 25px;
+
+
+	}
+
+
+	/*case sider*/
+	.infoboks {
+		background-color: #dddd;
+
+	}
+
+	.infoting {
+		margin-top: 15px;
+		margin-left: 5%;
+		width: 30px;
+		display: inline-block;
+	}
+
+
+	.infotekst {
+		margin-left: 5%;
+		line-height: 25px;
+		margin-top: 5px;
+	}
+
+	.broedtekst {
+		background-color: #E6EFDC;
+
+	}
+
+
+
+	.om-projekt {
+
+		margin: 5%;
+		padding: 30px;
+		text-align: justify;
+		line-height: 25px;
+
+	}
+
+	.imgaside {
+		display: block;
+		margin-left: 25%;
+		margin-right: 25%;
+		margin-top: 5%;
+		width: 45%
+	}
+
+
+}
